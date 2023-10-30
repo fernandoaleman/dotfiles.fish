@@ -1,0 +1,50 @@
+live_config_reload: true
+
+env:
+  TERM: xterm-256color
+
+window:
+  startup_mode: SimpleFullscreen
+  decorations: buttonless
+  dynamic_padding: false
+  opacity: 0.9
+  padding:
+    x: 25
+    y: 20
+
+font:
+  normal:
+    family: "JetBrainsMono Nerd Font"
+    style: Medium
+  italic:
+    family: "JetBrainsMono Nerd Font"
+    style: Medium Italic
+  bold:
+    family: "JetBrainsMono Nerd Font"
+    style: Heavy
+  bold_italic:
+    family: "JetBrainsMono Nerd Font"
+    style: Heavy Italic
+  size: 20.0
+  AppleFontSmoothing: true
+
+key_bindings:
+  # These tmux bindings assume you are using `Ctrl+A` for tmux binding.
+  # If you use the default `Ctrl+B`, then use `\x02` for chars.
+  - {key: Minus, mods: Command, chars: "\x01\""}          # split tmux window horizontally
+  - {key: Backslash, mods: Command, chars: "\x01%"}       # split tmux window vertically
+  - {key: Left, mods: Command, chars: "\x01h"}            # select pane left
+  - {key: Down, mods: Command, chars: "\x01j"}            # select pane down
+  - {key: Up, mods: Command, chars: "\x01k"}              # select pane up
+  - {key: Right, mods: Command, chars: "\x01l"}           # select pane right
+  - {key: T, mods: Command, chars: "\x01c"}               # create a new tmux window
+  - {key: W, mods: Command, chars: "\x01x"}               # kill the current pane
+  - {key: Tab, mods: Control, chars: "\x01n"}             # switch to next tmux window
+  - {key: LBracket, mods: Command|Shift, chars: "\x01p"}  # switch to next tmux window
+  - {key: RBracket, mods: Command|Shift, chars: "\x01n"}  # switch to previous tmux window
+  - {key: O, mods: Command, chars: "\x01u"}               # open URLs 'joshmedeski/tmux-fzf-url'
+  - {key: G, mods: Command, chars: "\x01g"}               # open git manager 'jesseduffield/lazygit'
+  - {key: K, mods: Command, chars: "\x01\x54"}            # open t - tmux smart session manager
+
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
