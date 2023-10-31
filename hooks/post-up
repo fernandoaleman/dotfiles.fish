@@ -3,3 +3,10 @@
 if [ -d "$HOME/.config/tmux/plugins/tpm" ]; then
   "$HOME/.config/tmux/plugins/tpm/bin/install_plugins"
 fi
+
+mkdir "$HOME"/.ssh
+chmod 700 "$HOME"/.ssh
+chmod 600 "$HOME"/.ssh/*
+chown -R "$USER" "$HOME"/.ssh
+
+ssh-add --apple-use-keychain
