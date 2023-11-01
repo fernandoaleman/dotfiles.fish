@@ -1,6 +1,9 @@
 [aws]
 disabled = true
 
+[battery]
+disabled = true
+
 [character]
 success_symbol = "[\uf054](white)" # 
 vicmd_symbol = "[\ue62b](white)" # 
