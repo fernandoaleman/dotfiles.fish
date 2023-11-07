@@ -46,7 +46,17 @@ key_bindings:
   - {key: G, mods: Command, chars: "\x01g"}               # open git manager 'jesseduffield/lazygit'
   - {key: K, mods: Command, chars: "\x01\x54"}            # open t - tmux smart session manager
   - {key: D, mods: Command, chars: "\x01d"}               # detach from tmux
-  - {key: Comma, mods: Command, chars: "\x01,"}           # Rename tmux window
+  - {key: Comma, mods: Command, chars: "\x01,"}           # rename tmux window
+  - {key: Key1, mods: Command, chars: "\x011"}            # select tmux window 1
+  - {key: Key2, mods: Command, chars: "\x012"}            #                ... 2
+  - {key: Key3, mods: Command, chars: "\x013"}            #                ... 3
+  - {key: Key4, mods: Command, chars: "\x014"}            #                ... 4
+  - {key: Key5, mods: Command, chars: "\x015"}            #                ... 5
+  - {key: Key6, mods: Command, chars: "\x016"}            #                ... 6
+  - {key: Key7, mods: Command, chars: "\x017"}            #                ... 7
+  - {key: Key8, mods: Command, chars: "\x018"}            #                ... 8
+  - {key: Key9, mods: Command, chars: "\x019"}            #                ... 9
+
 
 import:
   - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
